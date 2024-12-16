@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- external file css  -->
+  <link href="./src/output.css" rel="stylesheet">
   
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -15,7 +17,38 @@
   </style>
 </head>
 <body>
-
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Primary Orange -->
+    <div class="flex flex-col items-center justify-center bg-primary-orange text-neutral-white p-4 rounded-lg shadow-lg">
+      <div class="w-20 h-20 bg-primary-orange rounded-md"></div>
+      <p class="mt-4 font-bold">Primary Orange</p>
+      <p>hsl(25, 97%, 53%)</p>
+    </div>
+    <!-- Neutral White -->
+    <div class="flex flex-col items-center justify-center bg-neutral-white text-neutral-veryDarkBlue p-4 rounded-lg shadow-lg">
+      <div class="w-20 h-20 bg-neutral-white rounded-md border border-neutral-lightGray"></div>
+      <p class="mt-4 font-bold">Neutral White</p>
+      <p>hsl(0, 0%, 100%)</p>
+    </div>
+    <!-- Neutral Light Gray -->
+    <div class="flex flex-col items-center justify-center bg-neutral-lightGray text-neutral-veryDarkBlue p-4 rounded-lg shadow-lg">
+      <div class="w-20 h-20 bg-neutral-lightGray rounded-md"></div>
+      <p class="mt-4 font-bold">Neutral Light Gray</p>
+      <p>hsl(217, 12%, 63%)</p>
+    </div>
+    <!-- Neutral Dark Blue -->
+    <div class="flex flex-col items-center justify-center bg-neutral-darkBlue text-neutral-white p-4 rounded-lg shadow-lg">
+      <div class="w-20 h-20 bg-neutral-darkBlue rounded-md"></div>
+      <p class="mt-4 font-bold">Neutral Dark Blue</p>
+      <p>hsl(213, 19%, 18%)</p>
+    </div>
+    <!-- Neutral Very Dark Blue -->
+    <div class="flex flex-col items-center justify-center bg-neutral-veryDarkBlue text-neutral-white p-4 rounded-lg shadow-lg">
+      <div class="w-20 h-20 bg-neutral-veryDarkBlue rounded-md"></div>
+      <p class="mt-4 font-bold">Neutral Very Dark Blue</p>
+      <p>hsl(216, 12%, 8%)</p>
+    </div>
+  </div>
   <!-- Rating state start -->
 
   How did we do?
