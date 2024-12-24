@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- google font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <!-- external animate cdn for sweet alert  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- external file css  -->
   <link href="./src/output.css" rel="stylesheet">
   
@@ -16,8 +20,8 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<body class="font-overpass bg-neutral-veryDarkBlue h-screen flex items-center justify-center flex-col">
+  <div class=" grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden">
     <!-- Primary Orange -->
     <div class="flex flex-col items-center justify-center bg-primary-orange text-neutral-white p-4 rounded-lg shadow-lg">
       <div class="w-20 h-20 bg-primary-orange rounded-md"></div>
@@ -50,33 +54,51 @@
     </div>
   </div>
   <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
+  <section id="Rating-State" class="p-[1.3rem] mx-4 bg-neutral-darkBlue md:w-[25rem] rounded-3xl">
+    <div class="bg-neutral-lightGray p-4 w-12 flex items-center justify-center rounded-full mb-8">
+      <img src="./images/icon-star.svg" class="W-[16px] h-[15.05px]" alt="icon-star">
+    </div>
+    <p class="text-3xl font-bold text-neutral-white">How did we do?</p>
+    <p class="md:text-base text-sm font-normal text-neutral-lightGray2">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <form id="form" class="flex flex-col justify-center">
+      <div class="flex items-center justify-between my-6">
+        <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="1">1</button>
+        <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="2">2</button>
+        <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="3">3</button>
+        <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="4">4</button>
+        <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="5">5</button>
+      </div>
+      <button id="btn" class="flex items-center justify-center py-2 bg-primary-orange rounded-full hover:bg-white font-bold uppercase">Submit</button>
+    </form>
+  </section>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+  <section id="Thank-you-state" class="p-[1.3rem] mx-4 bg-neutral-darkBlue md:w-[25rem] rounded-3xl hidden">
+    <div class=" p-4  flex items-center justify-center my-2">
+      <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+    </div>
+    <div class="flex items-center justify-center">
+      <p class="text-lg font-normal text-primary-orange text-center w-56 rounded-full px-2 py-1 bg-neutral-lightGray flex items-center justify-center">You selected<span id="num-selected" class="mx-1"></span>out of 5</p>
+    </div>
+    <p class="text-3xl font-bold text-neutral-white text-center mt-8">
+      Thank you!
+    </p>
+    <p class="mt-2 text-center text-sm text-neutral-lightGray2">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+  </section>
   <!-- Thank you state end -->
-
-  
-  <div class="attribution">
+  <div class="attribution mt-8 text-neutral-white">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">MAHMOUD.JS</a>.
   </div>
+  <!-- external js file-->
+  <script src="main.js"></script>
+  <!-- sweet alert cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
