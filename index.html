@@ -21,81 +21,52 @@
   </style>
 </head>
 <body class="font-overpass bg-neutral-veryDarkBlue h-screen flex items-center justify-center flex-col">
-  <div class=" grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden">
-    <!-- Primary Orange -->
-    <div class="flex flex-col items-center justify-center bg-primary-orange text-neutral-white p-4 rounded-lg shadow-lg">
-      <div class="w-20 h-20 bg-primary-orange rounded-md"></div>
-      <p class="mt-4 font-bold">Primary Orange</p>
-      <p>hsl(25, 97%, 53%)</p>
-    </div>
-    <!-- Neutral White -->
-    <div class="flex flex-col items-center justify-center bg-neutral-white text-neutral-veryDarkBlue p-4 rounded-lg shadow-lg">
-      <div class="w-20 h-20 bg-neutral-white rounded-md border border-neutral-lightGray"></div>
-      <p class="mt-4 font-bold">Neutral White</p>
-      <p>hsl(0, 0%, 100%)</p>
-    </div>
-    <!-- Neutral Light Gray -->
-    <div class="flex flex-col items-center justify-center bg-neutral-lightGray text-neutral-veryDarkBlue p-4 rounded-lg shadow-lg">
-      <div class="w-20 h-20 bg-neutral-lightGray rounded-md"></div>
-      <p class="mt-4 font-bold">Neutral Light Gray</p>
-      <p>hsl(217, 12%, 63%)</p>
-    </div>
-    <!-- Neutral Dark Blue -->
-    <div class="flex flex-col items-center justify-center bg-neutral-darkBlue text-neutral-white p-4 rounded-lg shadow-lg">
-      <div class="w-20 h-20 bg-neutral-darkBlue rounded-md"></div>
-      <p class="mt-4 font-bold">Neutral Dark Blue</p>
-      <p>hsl(213, 19%, 18%)</p>
-    </div>
-    <!-- Neutral Very Dark Blue -->
-    <div class="flex flex-col items-center justify-center bg-neutral-veryDarkBlue text-neutral-white p-4 rounded-lg shadow-lg">
-      <div class="w-20 h-20 bg-neutral-veryDarkBlue rounded-md"></div>
-      <p class="mt-4 font-bold">Neutral Very Dark Blue</p>
-      <p>hsl(216, 12%, 8%)</p>
-    </div>
-  </div>
-  <!-- Rating state start -->
-  <section id="Rating-State" class="p-[1.3rem] mx-4 bg-neutral-darkBlue md:w-[25rem] rounded-3xl">
-    <div class="bg-neutral-lightGray p-4 w-12 flex items-center justify-center rounded-full mb-8">
-      <img src="./images/icon-star.svg" class="W-[16px] h-[15.05px]" alt="icon-star">
-    </div>
-    <p class="text-3xl font-bold text-neutral-white">How did we do?</p>
-    <p class="md:text-base text-sm font-normal text-neutral-lightGray2">Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!
-    </p>
-    <form id="form" class="flex flex-col justify-center">
-      <div class="flex items-center justify-between my-6">
-        <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="1">1</button>
-        <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="2">2</button>
-        <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="3">3</button>
-        <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="4">4</button>
-        <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="5">5</button>
+  <main role="main">
+    <!-- Rating state start -->
+    <section id="Rating-State" class="p-[1.3rem] mx-4 bg-neutral-darkBlue md:w-[25rem] rounded-3xl">
+      <div class="bg-neutral-lightGray p-4 w-12 flex items-center justify-center rounded-full mb-8">
+        <img src="./images/icon-star.svg" class="W-[16px] h-[15.05px]" alt="icon-star">
       </div>
-      <button id="btn" class="flex items-center justify-center py-2 bg-primary-orange rounded-full hover:bg-white font-bold uppercase">Submit</button>
-    </form>
-  </section>
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-  <section id="Thank-you-state" class="p-[1.3rem] mx-4 bg-neutral-darkBlue md:w-[25rem] rounded-3xl hidden">
-    <div class=" p-4  flex items-center justify-center my-2">
-      <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+      <p class="text-3xl font-bold text-neutral-white">How did we do?</p>
+      <p class="md:text-base text-sm font-normal text-neutral-lightGray2">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+      <form id="form" class="flex flex-col justify-center">
+        <div class="flex items-center justify-between my-6">
+          <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="1">1</button>
+          <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="2">2</button>
+          <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="3">3</button>
+          <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="4">4</button>
+          <button class="rating w-12 h-12 bg-neutral-lightGray text-neutral-white hover:bg-white hover:text-neutral-veryDarkBlue focus:bg-primary-orange focus:text-neutral-veryDarkBlue rounded-full flex items-center justify-center"data-rating="5">5</button>
+        </div>
+        <button id="btn" class="flex items-center justify-center py-2 bg-primary-orange rounded-full hover:bg-white font-bold uppercase">Submit</button>
+      </form>
+    </section>
+    <!-- Rating state end -->
+    <!-- Thank you state start -->
+    <section id="Thank-you-state" class="p-[1.3rem] mx-4 bg-neutral-darkBlue md:w-[25rem] rounded-3xl hidden">
+      <div class=" p-4  flex items-center justify-center my-2">
+        <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+      </div>
+      <div class="flex items-center justify-center">
+        <p class="text-lg font-normal text-primary-orange text-center w-56 rounded-full px-2 py-1 bg-neutral-lightGray flex items-center justify-center">You selected<span id="num-selected" class="mx-1"></span>out of 5</p>
+      </div>
+      <p class="text-3xl font-bold text-neutral-white text-center mt-8">
+        Thank you!
+      </p>
+      <p class="mt-2 text-center text-sm text-neutral-lightGray2">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+    </section>
+    <!-- Thank you state end -->
+  </main>
+  <footer role="contentinfo">
+    <div class="attribution mt-8 text-neutral-white">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">MAHMOUD.JS</a>.
     </div>
-    <div class="flex items-center justify-center">
-      <p class="text-lg font-normal text-primary-orange text-center w-56 rounded-full px-2 py-1 bg-neutral-lightGray flex items-center justify-center">You selected<span id="num-selected" class="mx-1"></span>out of 5</p>
-    </div>
-    <p class="text-3xl font-bold text-neutral-white text-center mt-8">
-      Thank you!
-    </p>
-    <p class="mt-2 text-center text-sm text-neutral-lightGray2">
-      We appreciate you taking the time to give a rating. If you ever need more support, 
-      don’t hesitate to get in touch!
-    </p>
-  </section>
-  <!-- Thank you state end -->
-  <div class="attribution mt-8 text-neutral-white">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">MAHMOUD.JS</a>.
-  </div>
+  </footer>
   <!-- external js file-->
   <script src="main.js"></script>
   <!-- sweet alert cdn -->
